@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">    
+<link type="text/css" rel="stylesheet" href="{% static 'css/nav-bar.css' %}">
+<body>
+    <div class="nav-bar">
+        <div class="icon-container">
+            <img src="{% static 'images/logo-princ.png' %}" class="icon-png">
+        </div>
+        <div class="compras-container">
+            <a href="/" class="button-compras">
+                <div class="icon-compras-container">
+                    <img src="{% static 'images/carrito.png' %}" class="icon-compras">
+                </div>
+                Compras
+            </a>
+        </div>
+        <div class="catalogo-container">
+            <a href="/catalogo/" class="button-catalogo">
+                <div class="icon-catalogo-container">
+                    <img src="{% static 'images/etiqueta.png' %}" class="icon-catalogo">
+                </div>
+                Catalogo Artículos
+            </a>
+        </div>     
+    </div>  
+</body>
+</html>
+
+

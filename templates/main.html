@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+    {% include 'nav-bar.html' %}
+    <div class="page">
+        <p class="text-principal" id="text-principal">Compras</p>
+        <div class="list-compras-container">
+            {% for i in elements %}
+            <div class="columna-container">
+                <div class="orden-item">
+                    <p class="orden-text">#Orden</p>
+                    <p class="orden-subtext">1234</p>
+                </div>
+                <div class="cliente-item">
+                    <p class="cliente-text">Cliente</p>
+                    <p class="cliente-subtext">John Doe</p>
+                </div>
+                <div class="monto-item">
+                    <p class="monto-text">Monto</p>
+                    <p class="monto-subtext">$9,999,999.00</p>
+                </div>
+                <div class="fecha-item">
+                    <p class="fecha-text">Fecha</p>
+                    <p class="fecha-subtext">99/99/9999</p>
+                </div> 
+                <div class="ver-orden-container">
+                    <a href="orden/" class="ver-orden-button">
+                        <div class="ver-orden-img-container">
+                            <img src="{% static 'images/ver.png' %}" class="ver-orden-img">
+                        </div>
+                        Ver Orden
+                    </a>
+                </div>
+            </div>
+            <div class="separador"></div>  
+            {% endfor %}        
+        </div>
+    </div>
+</body>
+</html>

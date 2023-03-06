@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/catalogo.css' %}">
+
+</head>
+<body>
+    {% include 'nav-bar.html' %}
+    <div class="page">
+        <p class="text-principal" id="text-principal">Articulos</p>
+        <div class="list-articulos-container">
+            {% for i in elements %}
+            <div class="columna-container">
+                <div class="img-item">
+                    <img src="{% static 'images/auriculares.png' %}" class="item-png">
+                </div>
+                <div class="nombre-item">
+                    <p class="nombre-text">Feel The Beat</p>
+                    <p class="nombre-subtext">Description</p>
+                </div>
+                <div class="cantidad-item">
+                    <p class="cantidad-text">2</p>
+                    <p class="cantidad-subtext">Stock Disponible</p>
+                </div>
+                <div class="fecha-item">
+                    <p class="fecha-text">99/99/9999</p>
+                    <p class="fecha-subtext">Última Actualización</p>
+                </div>
+            </div>
+            <div class="separador"></div>  
+            {% endfor %}        
+        </div>
+    </div>
+</body>
+</html>

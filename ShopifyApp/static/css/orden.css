@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebeef2;
+    opacity: 1;
+}
+
+.text-principal{
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 70px 0px 20px 50px;
+}
+
+.list-orden-container{
+    background-color: #ffffff;
+    height: 76.5vh;
+    margin: 0px 50px 50px 50px;
+}
+
+.nombre-orden-item{
+    font-size: 32px;
+    font-weight: 600;
+    height: 90px;
+    padding: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+.columna-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    align-content: center;
+    box-shadow: 0px 0px 0.75px gray;
+}
+
+.item-png{
+    width: 64px;
+    height: 64px;
+}
+
+.img-item{
+    margin: 0px 0px 0px 70px;
+}
+
+.nombre-item, .cantidad-item, .total-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 70px 0px 110px;
+}
+
+.nombre-text, .cantidad-text, .total-text{
+    font-size: 22px;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+}
+
+.nombre-subtext, .cantidad-subtext, .total-subtext{
+    font-size: 18px;
+    align-self: center;
+    justify-self: center;
+}
+
+.total-monto{
+    display: flex;
+    margin: 150px 0px 0px 675px;
+}
+
+.total-monto-text{
+    width: 350px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.separador{
+    height: 30px;
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    opacity: 0.2;
+}

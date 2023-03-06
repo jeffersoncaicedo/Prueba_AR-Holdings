@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #0750a4;
+    width: 21%;
+    height: 100vh;
+    float: left;
+    opacity: 1;
+}
+
+.icon-png{
+    width: 70%;
+    height: auto;
+    margin: 20px 0px 50px 30px;
+}
+
+.compras-container, .catalogo-container{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px 10px 20px;
+}
+
+.icon-compras, .icon-catalogo{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.icon-catalogo{
+    transform: rotateY(180deg);
+    margin-top: -3px;
+}
+
+.icon-compras{
+    margin-top: -5px;
+}
+
+.button-compras, .button-catalogo{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
