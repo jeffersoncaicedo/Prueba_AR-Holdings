@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--7ojk+px_8y$m(e6si+j13yk@64lz@eux*xov7%*hl7c(426md
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['a732-2800-bf0-2ad-81-1c8f-9177-1246-87eb.sa.ngrok.io']
 
 
 # Application definition
@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'prueba_tec.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LocalDB',
-        'USER': 'root',
+        'NAME': 'localdb',
+        'USER': 'administrador',
         'PASSWORD': 'adminaccount12345',
         'HOST': 'localhost',
         'PORT': '3306',

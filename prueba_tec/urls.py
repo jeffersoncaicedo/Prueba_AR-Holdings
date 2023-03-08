@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.home),
     path('catalogo/', views.Catalogo),
     path('orden/', views.Orden),
+    path('ordenes/webhook', views.OrdenesWebhook),
 ]
