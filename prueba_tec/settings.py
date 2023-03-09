@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure--7ojk+px_8y$m(e6si+j13yk@64lz@eux*xov7%*hl7c(426md
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a732-2800-bf0-2ad-81-1c8f-9177-1246-87eb.sa.ngrok.io']
+ALLOWED_HOSTS = []
+
+# ['a732-2800-bf0-2ad-81-1c8f-9177-1246-87eb.sa.ngrok.io']
 
 
 # Application definition
@@ -123,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'ShopifyApp/static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'ShopifyApp/static'), )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

@@ -14,26 +14,27 @@
     <div class="page">
         <p class="text-principal" id="text-principal">Compras</p>
         <div class="list-compras-container">
-            {% for i in elements %}
+            
+            {% for i in compras %}
             <div class="columna-container">
                 <div class="orden-item">
                     <p class="orden-text">#Orden</p>
-                    <p class="orden-subtext">1234</p>
+                    <p class="orden-subtext">{{ i.orden }}</p>
                 </div>
                 <div class="cliente-item">
                     <p class="cliente-text">Cliente</p>
-                    <p class="cliente-subtext">John Doe</p>
+                    <p class="cliente-subtext">{{ i.nombre }}</p>
                 </div>
                 <div class="monto-item">
                     <p class="monto-text">Monto</p>
-                    <p class="monto-subtext">$9,999,999.00</p>
+                    <p class="monto-subtext">${{ i.total }}</p>
                 </div>
                 <div class="fecha-item">
                     <p class="fecha-text">Fecha</p>
-                    <p class="fecha-subtext">99/99/9999</p>
+                    <p class="fecha-subtext">{{ i.fecha }}</p>
                 </div> 
                 <div class="ver-orden-container">
-                    <a href="orden/" class="ver-orden-button">
+                    <a href="orden/{{ i.id_orden }}"  class="ver-orden-button" >
                         <div class="ver-orden-img-container">
                             <img src="{% static 'images/ver.png' %}" class="ver-orden-img">
                         </div>
@@ -41,8 +42,9 @@
                     </a>
                 </div>
             </div>
-            <div class="separador"></div>  
-            {% endfor %}        
+            <div class="separador"></div> 
+            {% endfor %}
+
         </div>
     </div>
 </body>

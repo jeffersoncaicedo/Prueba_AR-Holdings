@@ -27,6 +27,7 @@ body{
     background-color: #ffffff;
     height: 76.5vh;
     margin: 0px 50px 50px 50px;
+    overflow: auto;
 }
 
 .nombre-orden-item{
@@ -43,6 +44,7 @@ body{
     flex-wrap: wrap;
     height: 100px;
     align-content: center;
+    justify-content: space-between;
     box-shadow: 0px 0px 0.75px gray;
 }
 
@@ -52,21 +54,33 @@ body{
 }
 
 .img-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px 0px 0px 70px;
 }
 
 .nombre-item, .cantidad-item, .total-item{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 70px 0px 110px;
+    align-content: center;
+    margin: 0px 70px 0px 50px;
 }
 
+
+
 .nombre-text, .cantidad-text, .total-text{
+    display: grid;
     font-size: 22px;
     font-weight: 700;
     align-self: center;
-    justify-self: center;
+    justify-items: center;
+}
+
+.nombre-text{
+    width: 325px;
 }
 
 .nombre-subtext, .cantidad-subtext, .total-subtext{
@@ -77,7 +91,7 @@ body{
 
 .total-monto{
     display: flex;
-    margin: 150px 0px 0px 675px;
+    margin: 35px 0px 0px 675px;
 }
 
 .total-monto-text{

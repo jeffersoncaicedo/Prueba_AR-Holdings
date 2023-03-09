@@ -17,18 +17,18 @@
             {% for i in elements %}
             <div class="columna-container">
                 <div class="img-item">
-                    <img src="{% static 'images/auriculares.png' %}" class="item-png">
+                    <img src="{{ i.imagen }}" class="item-png">
                 </div>
                 <div class="nombre-item">
-                    <p class="nombre-text">Feel The Beat</p>
+                    <p class="nombre-text">{{ i.nombre }}</p>
                     <p class="nombre-subtext">Description</p>
                 </div>
                 <div class="cantidad-item">
-                    <p class="cantidad-text">2</p>
+                    <p class="cantidad-text">{{ i.cantidad }}</p>
                     <p class="cantidad-subtext">Stock Disponible</p>
                 </div>
                 <div class="fecha-item">
-                    <p class="fecha-text">99/99/9999</p>
+                    <p class="fecha-text">{{ i.fecha }}</p>
                     <p class="fecha-subtext">Última Actualización</p>
                 </div>
             </div>

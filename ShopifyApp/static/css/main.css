@@ -27,6 +27,7 @@ body{
     background-color: #ffffff;
     height: 76.5vh;
     margin: 0px 50px 50px 50px;
+    overflow: auto;
 }
 
 .columna-container{
@@ -35,6 +36,7 @@ body{
     flex-wrap: wrap;
     height: 100px;
     align-content: center;
+    justify-content: space-between;
     box-shadow: 0px 0px 0.75px gray;
 }
 
@@ -42,17 +44,18 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 40px 0px 80px;
+    margin: 0px 20px 0px 70px;
 }
 
 .orden-text, .cliente-text, .monto-text, .fecha-text{
-    font-size:18px;
+    font-size:22px;
     font-weight: 700;
     align-self: center;
     justify-self: center;
 }
 
 .orden-subtext, .cliente-subtext, .monto-subtext, .fecha-subtext{
+    font-size: 18px;
     align-self: center;
     justify-self: center;
 }

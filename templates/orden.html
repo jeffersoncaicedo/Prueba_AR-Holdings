@@ -15,23 +15,23 @@
         <p class="text-principal" id="text-principal">Detalle de Compra</p>
         <div class="list-orden-container">
             <p class="nombre-orden-item">
-                Orden: #1234
+                Orden: #{{ num_orden }}
             </p>
-            {% for i in elements %}
+            {% for i in items %}
             <div class="columna-container">
                 <div class="img-item">
-                    <img src="{% static 'images/auriculares.png' %}" class="item-png">
+                    <img src="{{ imagen }}" class="item-png">
                 </div>
                 <div class="nombre-item">
-                    <p class="nombre-text">Feel The Beat</p>
+                    <p class="nombre-text">{{ i.Nombre }}</p>
                     <p class="nombre-subtext">Descripción</p>
                 </div>
                 <div class="cantidad-item">
-                    <p class="cantidad-text">2</p>
+                    <p class="cantidad-text">{{ i.Cantidad }}</p>
                     <p class="cantidad-subtext">Cantidad</p>
                 </div>
                 <div class="total-item">
-                    <p class="total-text">$ 500,000.00</p>
+                    <p class="total-text">$ {{ i.Precio }}</p>
                     <p class="total-subtext">Total</p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
             {% endfor %}
             <div class="total-monto">
                 <p class="total-monto-text">
-                    Total: $ 2,000,000.00
+                    Total: $ {{ total }}
                 </p>
             </div>        
         </div>

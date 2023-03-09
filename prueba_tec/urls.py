@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('catalogo/', views.Catalogo),
-    path('orden/', views.Orden),
+    path('orden/<int:num_orden>', views.Orden),
     path('ordenes/webhook', views.OrdenesWebhook),
+    path('productos/webhook', views.ProductosWebhook),
 ]
