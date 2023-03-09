@@ -26,7 +26,8 @@ Para llevar a cabo la ejecución de la solución a la prueba técnica es necesar
 
 Para ejecutar la solución, en la pantalla comandos de windows (cmd), escribir el siguiente código para lanzar ngrok:
 
-    _8000 es el puerto por defecto del proyecto Django_
+    8000 es el puerto por defecto del proyecto Django
+    
     ngrok http 8000
 
 Configurar en el proyecto Django, en la sección _ALLOWED_HOSTS_ la dirección web proporcionada por ngrok:
