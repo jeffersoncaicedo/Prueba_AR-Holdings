@@ -26,16 +26,11 @@ Para llevar a cabo la ejecución de la solución a la prueba técnica es necesar
 
 Para ejecutar la solución, en la pantalla comandos de windows (cmd), escribir el siguiente código para lanzar ngrok:
 
-<br> <code>
-_800 es el puerto por defecto del proyecto Django_
-<br> ngrok http 8000
-</code>
+<br> <code> _800 es el puerto por defecto del proyecto Django_ <br> ngrok http 8000 </code>
 
 Configurar en el proyecto Django, en la sección _ALLOWED_HOSTS_ la dirección web proporcionada por ngrok:
 
-<br> <code>
-ALLOWED_HOSTS = ['7012-2800-bf0-2ad-81-7419-c34c-b141-86e1.sa.ngrok.io']
-</code>
+<br> <code> ALLOWED_HOSTS = ['7012-2800-bf0-2ad-81-7419-c34c-b141-86e1.sa.ngrok.io'] </code>
 
 Realizar la misma configuración en el panel administrativo de _Shopify Admin_. Dentro de _Settings-Notifications_ dirigirse a la sección de _Webhooks_. Una vez ahí modificar el webhook creado con la url proporcionada por ngrok:
 <br>
